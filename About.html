@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	
+</head>
+
+<style >
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+   *{ margin: 0;
+   	padding: 0;
+   	box-sizing: border-box;
+   	font-family: "Poppins", sans-serif;
+
+    }
+
+    section{
+    	color: thick black;
+    	position: relative;
+    	width: 100%;
+    	min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;
+    	background-color: lightgrey;
+    	/*background: url(laptop.jpg)no-repeat;
+    	background-size: cover;
+    	background-position: center;*/
+    	margin-left: ;
+    }
+
+    header{
+    	position: relative;
+    	top: 0;
+    	width: 100%;
+    	padding: 30px 100px;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+
+    header .logo{
+    	position: relative;
+    	color: #000;
+    	font-size: 30px;
+    	text-decoration: none;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	letter-spacing: 1px;
+
+    }
+
+    header .navigation a{
+    	color: #000;  	
+    	text-decoration: none;
+    	font-weight: 500;
+    	letter-spacing: 1px;
+    	padding: 2px 15px;
+    	border-radius: 20px;
+    	transition: 0.3s;
+    	transition-property: background;
+    }
+
+    header .navigation a:not(:last-child){
+      	margin-right: 30px;
+      }  
+
+    header .navigation a:hover{
+          	background: #fff;
+          }
+          label{
+		display: none;
+	}
+
+	#check{
+		z-index: 3;
+		display: none;
+	}
+
+	/*Responsive style*/
+
+	@media(max-width:960px ){
+		header .navigation{
+			display: none;
+		}
+
+		label{
+			display: block;
+			font-size: 25px;
+			cursor: pointer;
+		}
+
+		label:hover{
+			color: #fff;
+		}
+
+		label .close-btn{
+			display: none;
+		}
+
+		#check:checked ~ header .navigation{
+			z-index: 2;
+			position: fixed;
+			background: rgba(114, 223, 255, 0.9);
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-item: center;
+		}
+
+		#check:checked ~ header .navigation a{
+			font-weight: 700;
+			margin-right: 0px;
+			margin-bottom: 50px;
+			letter-spacing: 2px;
+
+
+		}
+
+		#check:checked ~ header label .menu-btn{
+			display: none;
+		}
+</style>
+<body>
+
+	<section>
+		<input type="checkbox" id="check">
+		<header>
+			<h2> <a href="#" class="logo">Logo</a></h2>
+			<div class="navigation">
+				<a href="respons.html">Home</a>
+				<a href="About.html">About</a>
+				<a href="services.html">Services</a>
+				<a href="content.html">Content</a>
+			</div>
+			<label for="check">
+				<i class="fas fa-bars menu-btn"></i>
+				<i class="fas fa-times close-btn"></i>
+			</label>
+		</header>
+		<br/><br/><br/><br/>
+		<h1 style="color: darkgreen;"><b>ABOUT MOLEKA</b></h1>
+		<div>
+			<p><i><b>Moleka Lord Epite</b><i/> is an undergraduate Software Enginering student at the COLLEGE OF TECHNOLOGY (COT), UNIVERSITY OF BUEA. As an aspired developer, he is lookingfor a job that will enable him to creatively showcase talents all the while challenging him to adapt new skills and processes needed to advanced with his chosen carrier path.</p>
+				  <br/><br/><br/>
+		          <div class="third">
+						<h1 style="color: darkgreen;">MY CURRICULUM VITAE</h1>
+					 <br/><br/>
+						CAMEROON, MOLYKO-BUEA<br/>
+
+				 		+237 676244105 / 694700697<br/>
+
+						Email:<a	href="www.epitelord56@gmail.com">www.epitelord56@gmail.com</a><br/>
+						Website :<br/>
+						<button style="height: 50px; width: 200px; background: #903b1b; border-radius: 5px; border-color: white; margin-left: 20px;"><a href="epite.greatmikeprojects.com" target="blank" style="text-decoration: none;"><p style="color: white; font-size: 18px;">click to visit website</p></a></button>
+						<br/><br/>
+
+						<p>Moleka Lord Epite</p><br/>
+						<img src="molek.png"  height="200px" width="200px" />
+						<br/>
+						<a href="molek.png">click to see enlarged image</a>
+						<br/><br/>		 								
+					</div>   
+			      	<div class="first">
+						 			<dd><h1 style="color: darkgreen;"> PERSONAL INFORMATION</h1></dd>
+									<br/><br/>
+								DATE OF BIRTH				: 20/06/1999<br/><br/>
+								PLACE OF BIRTH			: EKONDO TITI<br/><br/>
+
+								CIVIL STATUS				: SINGLE<br/><br/>
+
+								RELIGION						: CHRISTIAN<br/><br/>
+
+								CITIZENSHIP					: CAMEROONIAN<br/><br/>
+
+								MOTHER’S NAME				: MOLEKA GLADYS<br/><br/>
+
+								FATHER’S NAME				: MOLEKA CHRISTOPHER<br/><br/><br/><br/>
+					  </div>
+			      	  <div class="second">
+						 			<dd><h1 style="color: darkgreen;"> EDUCATIONAL BACKGROUND</h1></dd><br/><br/>
+
+								    <p style="color: purple;">PRIMARY</p> 				 G. P. S. BEKORA BAROMBI<br/><br/>		 
+									                      2004/2005 – 2009/201<br/><br/>
+										   			      			FIRST SCHOOL LIVING    CERTIFICATE<br/><br/>
+
+								    <p style="color: purple;">SECONDARY	</p>			 G. H. S BEKORA BAROMBI<br/><br/>
+										   			      			2010/2011 – 2014/2015, 2015/2016 – 2019/2020<br/><br/>
+										   			      			ORDINARY LEVEL, ADVANCED LEVEL<br/><br/>
+
+										<p style="color: purple;">TERTIARY</p>2021/2022 - 2023/2024<br/><br/>
+														  UNIVERSITY OF BUEA, COLLEGE OF
+													       					TECHNOLOGY<br/><br/>
+									                       	 BACHELOR OF TECHNOLOGY (UNDERGRADUATE)<br/><br/>
+					    </div>
+		</div>
+		<button style="height: 50px; width: 150px; background: #903b1b; border-radius: 5px; border-color: white; margin-left: 20px;"><a href="moleka lot epite..pdf" target="blank" style="text-decoration: none;"><p style="color: white; font-size: 18px;">Download PDF</p></a></button>
+		<br/><br/><br/><br/>
+
+
+	</section>
+
+</body>
+</html>

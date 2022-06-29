@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>content</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+   *{ margin: 0;
+   	padding: 0;
+   	box-sizing: border-box;
+   	font-family: "Poppins", sans-serif;
+
+    }
+
+    section{
+    	color: thick black;
+    	position: relative;
+    	width: 100%;
+    	min-height: 100vh;
+    	/*display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;*/
+    	background-color: lightseagreen;
+    	/*background: url(laptop.jpg)no-repeat;
+    	background-size: cover;
+    	background-position: center;*/
+    	margin-left: ;
+    }
+
+    header{
+    	position: relative;
+    	top: 0;
+    	width: 100%;
+    	padding: 30px 100px;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+
+    header .logo{
+    	position: relative;
+    	color: #000;
+    	font-size: 30px;
+    	text-decoration: none;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	letter-spacing: 1px;
+
+    }
+
+    header .navigation a{
+    	color: #000;  	
+    	text-decoration: none;
+    	font-weight: 500;
+    	letter-spacing: 1px;
+    	padding: 2px 15px;
+    	border-radius: 20px;
+    	transition: 0.3s;
+    	transition-property: background;
+    }
+
+    header .navigation a:not(:last-child){
+      	margin-right: 30px;
+      }  
+
+    header .navigation a:hover{
+          	background: #fff;
+          }
+          label{
+		display: none;
+	}
+
+	#check{
+		z-index: 3;
+		display: none;
+	}
+
+	/*Responsive style*/
+
+	@media(max-width:960px ){
+		header .navigation{
+			display: none;
+		}
+
+		label{
+			display: block;
+			font-size: 25px;
+			cursor: pointer;
+		}
+
+		label:hover{
+			color: #fff;
+		}
+
+		label .close-btn{
+			display: none;
+		}
+
+		#check:checked ~ header .navigation{
+			z-index: 2;
+			position: fixed;
+			background: rgba(114, 223, 255, 0.9);
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-item: center;
+		}
+
+		#check:checked ~ header .navigation a{
+			font-weight: 700;
+			margin-right: 0px;
+			margin-bottom: 50px;
+			letter-spacing: 2px;
+
+
+		}
+
+		#check:checked ~ header label .menu-btn{
+			display: none;
+		}
+		
+</style>
+<body>
+	<section>
+		<input type="checkbox" id="check">
+		<header>
+			<h2> <a href="#" class="logo">Logo</a></h2>
+			<div class="navigation">
+				<a href="respons.html">Home</a>
+				<a href="About.html">About</a>
+				<a href="services.html">Services</a>
+				<a href="content.html">Content</a>
+			</div>
+			<label for="check">
+				<i class="fas fa-bars menu-btn"></i>
+				<i class="fas fa-times close-btn"></i>
+			</label>
+		</header>
+		<br/><br/><br/>
+		<center><h1>Content</h1></center><br/><br/><br/><br/>
+		<div class="products">
+			<div>
+				<center><img src="C:\Users\MOLEKA\Desktop\LORD\images\lap.jpg" height="200px" width="75%" style="padding-top: 10px;"></center>
+				<center><p><del>350</del>$ <br/>     300$ </p></center>
+				<center><p>A4 papers</p></center>
+			</div>
+			<div>
+				<center><img src="C:\Users\MOLEKA\Desktop\LORD\images\a.jpg" height="200px" width="75%" style="padding-top: 10px;"></center>
+				<center><p><del>3.5</del>$<br/>     3$ </p></center>
+			</div>
+			<div>
+				<center><img src="C:\Users\MOLEKA\Desktop\LORD\images\a4.jpg" height="200px" width="75%" style="padding-top: 10px;"></center>
+				<center><p><del>3.5</del>$<br/>      3$ </p></center>
+			</div>
+			<div>
+				<center><img src="C:\Users\MOLEKA\Desktop\LORD\images\b.jpg" height="200px" width="75%" style="padding-top: 10px;"></center>
+				<center><p><del>3.5</del>$ <br/>     2.5$ </p></center>
+			</div>
+			<div>
+				<center><img src="C:\Users\MOLEKA\Desktop\LORD\images\b1.jpg" height="200px" width="75%" style="padding-top: 10px;"></center>
+				<center><p><del>35</del>$<br/>   30$ </p></center>
+			</div>
+			<div>
+				<center><img src="C:\Users\MOLEKA\Desktop\LORD\images\JARUN.jpg" height="200px" width="75%" style="padding-top: 10px;"></center>
+				<center><p><del>350</del>$<br/>      250$ </p></center>
+			</div>
+		</div>
+</section>
+</body>
+</html>
